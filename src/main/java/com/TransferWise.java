@@ -29,6 +29,7 @@ public class TransferWise {
 
 	public static Set<Integer> computeTotalNumberOfBooksToReadRec(Book book, Set<Integer> uniqueBooks) {
 		if (book == null) {
+                        /* Vijay : this could have worked without returning */
 			return uniqueBooks;
 		} else if (uniqueBooks.contains(book.uniqueId)) {
 			return uniqueBooks;
